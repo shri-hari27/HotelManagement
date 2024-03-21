@@ -1,0 +1,67 @@
+/* Signup.css */
+
+/* Custom styles for the SignUp component */
+
+/* Body background */
+.body-signin-signup {
+  background-color: #f5f5f5; /* Light gray background color */
+}
+
+/* Container for the signup box */
+.box-area {
+  max-width: 500px;
+  margin: 50px auto; /* Center the box vertically */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Right box containing the signup form */
+.right-box {
+  padding: 30px;
+}
+
+/* Header text styles */
+.header-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+.header-text h5 {
+  font-size: 18px;
+  color: #6c757d; /* Dark gray color */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+/* Input field styles */
+.form-control {
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 20px; /* Add spacing between input fields */
+  padding: 10px; /* Add padding */
+}
+
+/* Sign up button styles */
+.sign-in-btn button {
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Add padding */
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.sign-in-btn button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link styles */
+.link-color {
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-color:hover {
+  text-decoration: underline; /* Underline on hover */
+}

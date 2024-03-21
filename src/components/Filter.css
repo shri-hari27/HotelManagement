@@ -1,0 +1,47 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+.filter-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(10.5); /* Increase the size of the checkboxes */
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.filter-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}

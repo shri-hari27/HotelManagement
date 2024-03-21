@@ -1,0 +1,22 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+.abthead {
+  color: black;
+}

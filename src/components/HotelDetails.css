@@ -1,0 +1,45 @@
+.hotel-details-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next row if necessary */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-wrapper img {
+  width: calc(33.33% - 20px); /* Adjust width to fit 3 images per row */
+  margin: 10px; /* Add some margin around each image */
+}
+
+.hotel-details-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.hotel-details-content {
+  margin-top: 20px;
+}
+
+.hotel-details-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555555;
+}
+
+.hotel-details-item strong {
+  color: #333333;
+}
+
+.loading-message {
+  font-size: 18px;
+  color: #777777;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+.booknow-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 4px solid #007bff; /* Update border color to a shade of blue */
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #f8f9fa; /* Add a light gray background color */
+}
+.booknowtitle {
+  color: black;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #007bff; /* Update label color to match the border color */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #007bff; /* Update border color to a shade of blue */
+}
+
+.total-price {
+  margin-top: 20px;
+}
+
+.total-price p {
+  font-weight: bold;
+  color: #007bff; /* Update total price text color to match the border color */
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+}
