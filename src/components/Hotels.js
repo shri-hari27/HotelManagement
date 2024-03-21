@@ -1,5 +1,4 @@
-// Hotels.js
-import { React, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Hotels.css";
 
@@ -10,10 +9,11 @@ const Hotels = () => {
       document.body.classList.remove("body-other-components");
     };
   }, []);
+
   return (
     <div className="hotels-container">
       <h2 className="hotels-title">
-        Explore the wide ranges of hotels and resorts !
+        Explore the wide ranges of hotels and resorts!
       </h2>
       <div className="hotel-option">
         <img src="/hotellogo.jpg" alt="Hotel" className="hotel-image" />
@@ -32,16 +32,19 @@ const Hotels = () => {
             relaxation and enjoyment.
           </p>
           <Link to="/all-hotels">
-            {" "}
             <button className="book-now-button">Explore Now</button>
           </Link>
-          <img
-            src={`/${Hotels}a.jpg`}
-            alt={Hotels.hotelId}
-            style={{ width: "40%", height: "auto" }}
-          />
         </div>
       </div>
+      {/* <div className="image-container">
+        <img
+          src="/pexels-photo-189296.jpeg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img src="/hotels1.jpeg" alt="Hotel" className="hotel-image1" />
+        <img src="/hotel2.jpeg" alt="Hotel" className="hotel-image1" />
+      </div> */}
     </div>
   );
 };

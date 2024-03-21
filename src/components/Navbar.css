@@ -7,7 +7,8 @@
 
 .username {
   font-size: large;
-  color: aqua;
+  color: rgb(140, 255, 0);
+  font-weight: bold;
 }
 
 .container {
@@ -21,14 +22,17 @@
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
   transition: color 0.3s;
+  margin-left: 30px;
 }
 
 .logo:hover {
-  color: #ffcc00; /* Yellow on hover */
+  color: aqua; /* Yellow on hover */
 }
-
+.navicon {
+  margin-right: 0px;
+  margin-left: 1rem;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -46,6 +50,6 @@
 }
 
 .nav-links li a:hover {
-  color: red;
+  color: aqua;
   font-weight: 600; /* Yellow on hover */
 }

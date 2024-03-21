@@ -1,39 +1,40 @@
-/* BookingDetails.css */
-
 .booking-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 20px;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #233142;
 }
 
 .booking-details-container h1 {
-  color: #333;
+  color: #fff;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.booking-details-container p {
-  margin-bottom: 10px;
+.booking-card {
+  width: calc(33.33% - 20px); /* 20px margin between cards */
+  max-width: 300px;
+  margin-bottom: 20px; /* Adjust as needed */
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.booking-details-container .booking-item {
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-}
-
-.booking-details-container .booking-item:last-child {
-  border-bottom: none;
-}
-
-.booking-details-container .booking-id {
-  color: #007bff;
-  font-weight: bold;
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #455d7a;
+  color: white;
 }
 
 .booking-details-container .booking-info {
-  color: #333;
+  font-weight: bold;
 }
 
 .booking-details-container .no-booking {

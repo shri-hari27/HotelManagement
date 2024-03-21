@@ -25,7 +25,13 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
+.hotel-image1 {
+  width: 300px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 /* Hotel info styling */
 .hotel-info {
   flex: 1;

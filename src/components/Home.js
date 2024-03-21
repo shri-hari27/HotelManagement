@@ -12,8 +12,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="hero">
-        <h1 className="title">Find Your Perfect Stay</h1>
-        <p className="title0">
+        <h1 className="title" style={{ fontSize: "40px", fontWeight: "bold" }}>
+          Find Your Perfect Stay{" "}
+        </h1>
+        <p className="title0 " style={{ fontSize: "20px" }}>
           Book with ease and discover amazing places to stay.
         </p>
       </div>
