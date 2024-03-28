@@ -20,7 +20,9 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
   return (
     <div className="admin-dashboard">
-      <h1 className="title"></h1>
+      <div className="card">
+        <img src="/admind.jpg" height={200}></img>
+      </div>
       <div className="card">
         <h2>Add New Hotel</h2>
         <p>Add a new hotel to the database.</p>
@@ -49,13 +51,13 @@ const AdminDashboard = () => {
           Booking Details
         </Link>{" "}
       </div>
-      {/* <div className="card">
+      <div className="card">
         <h2>User Feedback</h2>
         <p>View details of feedbacks given by users </p>
-        <Link to="/admin/user-details" className="btn feed-btn">
-          Booking Details
+        <Link to="/Feedbackdetails" className="btn feed-btn">
+          Feedback Details
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

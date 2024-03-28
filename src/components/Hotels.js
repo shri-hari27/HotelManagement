@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Hotels.css";
 
 const Hotels = () => {
@@ -9,6 +9,8 @@ const Hotels = () => {
       document.body.classList.remove("body-other-components");
     };
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <div className="hotels-container">
@@ -36,15 +38,104 @@ const Hotels = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="image-container">
+      <div className="image-container">
         <img
-          src="/pexels-photo-189296.jpeg"
+          onClick={() => navigate("/HotelDetails/1")}
+          src="/1b.jpg"
           alt="Hotel"
           className="hotel-image1"
         />
-        <img src="/hotels1.jpeg" alt="Hotel" className="hotel-image1" />
-        <img src="/hotel2.jpeg" alt="Hotel" className="hotel-image1" />
-      </div> */}
+        <img
+          onClick={() => navigate("/HotelDetails/1")}
+          src="/1a.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/1")}
+          src="/1c.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/1")}
+          src="/1d.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/2")}
+          src="/2a.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/2")}
+          src="/2b.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/2")}
+          src="/2c.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/2")}
+          src="/2d.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/12")}
+          src="/12a.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/12")}
+          src="/12b.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/12")}
+          src="/12c.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/12")}
+          src="/12d.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/3")}
+          src="/3a.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/3")}
+          src="/3b.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/3")}
+          src="/3c.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+        <img
+          onClick={() => navigate("/HotelDetails/3")}
+          src="/3d.jpg"
+          alt="Hotel"
+          className="hotel-image1"
+        />
+      </div>
     </div>
   );
 };

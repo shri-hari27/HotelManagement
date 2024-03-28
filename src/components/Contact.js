@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Contact.css"; // Import your CSS file for styling
-import { useEffect } from "react";
+
 const Contact = () => {
   useEffect(() => {
     document.body.classList.add("body-other-components");
@@ -8,14 +8,46 @@ const Contact = () => {
       document.body.classList.remove("body-other-components");
     };
   }, []);
-  const handleSubmit = (e) => {
+  const [feedbackSent, setFeedbackSent] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+
+    // Get form data
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    // Send form data to backend endpoint
+    try {
+      const response = await fetch(
+        "https://localhost:44320/api/Test/feedback",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        setFeedbackSent(true);
+        window.alert("Feedback Sent!"); // Display alert here
+      } else {
+        alert("Failed to send feedback. Please try again.");
+      }
+    } catch (error) {
+      alert("Error sending feedback. Please try again later.");
+      console.error("Error:", error);
+    }
   };
 
   return (
     <div className="contact-container">
-      <h1 className="conhead">Contact Us</h1>
+      <h1 style={{ color: "black" }}>Contact info :</h1>
       <div className="contact-info">
         <div className="address">
           <h2>Address:</h2>
@@ -40,7 +72,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="feedback-form">
-        <h2>Feedback Form:</h2>
+        <h1 style={{ color: "black" }}>Feedback Form:</h1>
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>

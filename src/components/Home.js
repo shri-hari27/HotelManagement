@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
-import { useEffect } from "react";
 
 const Home = () => {
+  const backgroundImages = [
+    "url('/homeA.jpeg')",
+    "url('/homeB.jpeg')",
+    "url('/homeC.jpeg')",
+
+    // Add more background image URLs as needed
+  ];
+
+  const [backgroundImage, setBackgroundImage] = useState("");
+
   useEffect(() => {
-    document.body.classList.add("body-other-components");
-    return () => {
-      document.body.classList.remove("body-other-components");
-    };
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    setBackgroundImage(backgroundImages[randomIndex]);
   }, []);
+
   return (
-    <div className="home-container">
+    <div
+      className="home-container"
+      style={{ backgroundImage: backgroundImage }}
+    >
       <div className="hero">
         <h1 className="title" style={{ fontSize: "40px", fontWeight: "bold" }}>
           Find Your Perfect Stay{" "}

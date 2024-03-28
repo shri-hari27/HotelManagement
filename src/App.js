@@ -21,6 +21,7 @@ import DeleteHotel from "./components/admin/DeleteHotel";
 import Payments from "./components/Payment";
 import Thankyou from "./components/Thankyou";
 import BookingDetails from "./components/admin/BookingDetails";
+import FeedbackDetails from "./components/admin/Feedbackdetails";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/UpdateHotel" element={<UpdateHotel />} />
           <Route path="/edit-hotel/:id" element={<EditHotel />} />
           <Route path="/BookingDetails" element={<BookingDetails />} />
+          <Route path="/Feedbackdetails" element={<FeedbackDetails />} />
 
           {/* Updated route path */}
           <Route path="/HotelDetails/:hotelId" element={<HotelDetails />} />

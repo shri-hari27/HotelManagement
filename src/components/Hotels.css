@@ -16,7 +16,9 @@
   display: flex;
   margin-bottom: 30px;
 }
-
+.image-container {
+  margin-left: 45px;
+}
 /* Hotel image styling */
 .hotel-image {
   width: 200px;
@@ -27,11 +29,22 @@
 }
 .hotel-image1 {
   width: 300px;
-  height: auto;
+  height: 250px;
   margin-right: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  margin-left: 40px;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
+
+.hotel-image1:hover {
+  transform: scale(1.15); /* Scale the image slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #455d7a;
+  color: white;
+}
+
 /* Hotel info styling */
 .hotel-info {
   flex: 1;
