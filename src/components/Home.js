@@ -6,6 +6,8 @@ const Home = () => {
     "url('/homeA.jpeg')",
     "url('/homeB.jpeg')",
     "url('/homeC.jpeg')",
+    "url('/homeD.jpeg')",
+    "url('/homeE.jpeg')",
 
     // Add more background image URLs as needed
   ];
@@ -34,24 +36,20 @@ const Home = () => {
         <div className="feature">
           <i className="fas fa-search"></i>
           <h2>Search & Explore</h2>
-          <p>
-            Search for hotels, resorts, or vacation rentals in any destination.
-          </p>
+          <p>Search for hotels and resorts as per your needs.</p>
         </div>
         <div className="feature">
           <i className="fas fa-star"></i>
           <h2>Curated Listings</h2>
           <p>
-            Discover handpicked accommodations with top ratings and reviews.
+            Discover handpicked accommodations with numerous options of
+            amenities .
           </p>
         </div>
         <div className="feature">
           <i className="fas fa-calendar-alt"></i>
           <h2>Flexible Booking</h2>
-          <p>
-            Book your stay with flexible cancellation policies and secure
-            payments.
-          </p>
+          <p>Book your stay with secure payments.</p>
         </div>
       </div>
     </div>

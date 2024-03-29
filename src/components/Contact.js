@@ -87,7 +87,9 @@ const Contact = () => {
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button className="conbtn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>
